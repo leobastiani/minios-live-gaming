@@ -68,7 +68,7 @@ EXPORT_LOGS="false"
 
 # System locale
 # Options: en_US, ru_RU, es_ES, pt_BR
-LOCALE="en_US"
+LOCALE="pt_BR"
 
 # Generate locales for multiple languages as defined in the LOCALES variable in minioslib
 # Options: true, false
@@ -81,7 +81,7 @@ KEEP_ALL_LOCALES="false"
 # Timezone setting
 # The system will automatically detect and set the timezone based on your location if you have Internet access.
 # Format: [any timezone]
-TIMEZONE="Etc/UTC"
+TIMEZONE="America/Sao_Paulo"
 
 
 ############################################################
