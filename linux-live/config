@@ -14,11 +14,11 @@ DISTRIBUTION_ARCH="amd64"
 
 # Desktop environment
 # Options: core, flux, xfce, xfce-ultra, xfce-puzzle, xfce-puzzle-base, lxqt, devel
-DESKTOP_ENVIRONMENT="xfce"
+DESKTOP_ENVIRONMENT="xfce-puzzle-base"
 
 # System variant (defines the list of packages used in modules)
 # Options: minimum, standard, toolbox, ultra, puzzle
-PACKAGE_VARIANT="standard"
+PACKAGE_VARIANT="puzzle"
 
 # Compression type
 # Options: xz, lzo, gz, lz4, zstd
@@ -142,7 +142,7 @@ LINK_USER_DIRS="false"
 
 # Create a secondary ISO with a constant filename
 # Options: true, false
-BUILD_TEST_ISO="true"
+BUILD_TEST_ISO="false"
 
 # Remove old ISO files for this build type
 # Options: true, false
