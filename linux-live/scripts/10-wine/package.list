@@ -1,5 +1,5 @@
 wine32
-winehq-stable
+wine
 cabextract
 libgl1-mesa-dri:i386
 mesa-vulkan-drivers:i386

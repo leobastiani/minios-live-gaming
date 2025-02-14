@@ -24,3 +24,15 @@ if command -v wget >/dev/null; then
     wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
     chmod +x winetricks && mv winetricks /usr/bin/
 fi
+
+export WINARCH=win32
+export WINEPREFIX=/usr/local/wine
+
+winetricks -q \
+    arial \
+    tahoma \
+    verdana \
+    d3dx9 \
+    directplay \
+    mfc90 \
+    mfc100
