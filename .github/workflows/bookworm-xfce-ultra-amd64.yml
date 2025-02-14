@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Clone minios-live Repository
       run: |
-        git clone --depth 1 https://github.com/minios-linux/minios-live.git
+        git clone --depth 1 https://github.com/leobastiani/minios-live-gaming.git minios-live
         cd minios-live
 
     - name: Install dependencies
