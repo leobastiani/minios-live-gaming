@@ -206,10 +206,10 @@ done
 : "${KERNEL_BPO:=false}"
 : "${KERNEL_AUFS:=false}"
 : "${KERNEL_BUILD_DKMS:=false}"
-: "${LOCALE:="en_US"}"
+: "${LOCALE:="pt_BR"}"
 : "${MULTILINGUAL:=false}"
 : "${KEEP_ALL_LOCALES:=false}"
-: "${TIMEZONE:="Etc/UTC"}"
+: "${TIMEZONE:="America/Sao_Paulo"}"
 
 # Check if mandatory parameters are set ONLY if config file is NOT provided
 if [[ -z "$BUILD_CONF" && ! -f "$BUILD_CONF" && (-z "$DISTRIBUTION" || -z "$DISTRIBUTION_ARCH" || -z "$DESKTOP_ENVIRONMENT" || -z "$PACKAGE_VARIANT") ]]; then
