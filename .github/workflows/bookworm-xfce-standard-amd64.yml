@@ -1,7 +1,7 @@
 name: bookworm-xfce-standard-amd64
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   build:

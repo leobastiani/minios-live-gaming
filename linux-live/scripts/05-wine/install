@@ -20,31 +20,4 @@ if [ -f $SCRIPT_DIR/package.list ]; then
     echo "VERSION=$(dpkg -s $PACKAGE | grep Version | sed 's/Version: //g' | sed 's/:/-/g')" >>/.package
 fi
 
-if command -v wget >/dev/null; then
-    wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-    chmod +x winetricks && mv winetricks /usr/bin/
-fi
-
-export WINARCH=win32
-export WINEPREFIX=/usr/local/wine
-
-winetricks -q \
-    arial \
-    tahoma \
-    verdana \
-    d3dx9 \
-    directplay \
-    mfc90 \
-    mfc100
-
-chown -R 1000:1000 /usr/local/wine
-
-# Create a .desktop entry for .exe files
-cat <<EOF >/usr/share/applications/wine-exe.desktop
-[Desktop Entry]
-Name=Wine Windows Program Loader
-Exec=WINEPREFIX=/usr/local/wine wine start /unix "%f"
-Type=Application
-MimeType=application/x-ms-dos-executable;
-StartupNotify=true
-EOF
+find "/usr/lib/wine" -type f -exec setcap cap_net_raw+epi {} \;
