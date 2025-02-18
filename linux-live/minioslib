@@ -1345,7 +1345,7 @@ TIMEZONE="${TIMEZONE}"
 ################################################################################
 # KEYBOARD_LAYOUTS defines the keyboard layouts. The first is always 'us'.
 # See: man xkeyboard-config for a list of layouts.
-KEYBOARD_LAYOUTS="us,${LAYOUTID}"
+KEYBOARD_LAYOUTS="${LAYOUTID},us"
 
 # KEYBOARD_MODEL specifies the keyboard model, commonly "pc105" for desktops.
 # For further info, see: man xkeyboard-config
